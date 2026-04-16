@@ -1,7 +1,16 @@
 [project]
-name = "shared-lib"
-version = "0.1.0"
+name = "urlib"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "databricks-connect>=18.1.2",
+    "pyyaml>=6.0.3",
+]
+
+[build-system]
+requires = ["setuptools"]
+
+[tool.setuptools.packages.find]
+where = ["utils"]
