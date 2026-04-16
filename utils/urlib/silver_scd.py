@@ -2,8 +2,8 @@ from pyspark.sql import DataFrame
 from typing import List, Optional
 from pyspark.sql.functions import current_timestamp, lit, concat_ws, sha2
 from pyspark.sql.types import DateType
-from utils.read_yaml.read_yaml import ReadYaml
-from utils.spark_session.spark_class import SparkClass
+from urlib.read_yaml.read_yaml import ReadYaml
+from urlib.spark_session.spark_class import SparkClass
 from delta.tables import DeltaTable
 
 class ScdTypeTwo(SparkClass):

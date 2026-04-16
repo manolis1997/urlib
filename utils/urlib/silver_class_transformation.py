@@ -1,5 +1,5 @@
 from pyspark.sql import functions as F
-from utils.spark_session.spark_class import SparkClass
+from urlib.spark_session.spark_class import SparkClass
 
 class SilverTransformation(SparkClass):
     def __init__(self, source_df, name, yaml_file):
